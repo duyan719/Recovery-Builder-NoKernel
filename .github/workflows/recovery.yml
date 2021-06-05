@@ -15,10 +15,10 @@ on:
 
 env:
   MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
-  DEVICE: g900em
-  DT_LINK:  https://github.com/leeminh888/android_device_lge_g900em-twrp -b pb10
-  DT_PATH: device/lge/g900em
-  TARGET: bootimage
+  DEVICE: vayu
+  DT_LINK:  https://github.com/Leminh8686/device_xiaomi_vayu-TWRP
+  DT_PATH: device/xiaomi/vayu
+  TARGET: recoveryimage
   TZ: Asia/Kolkata
 
 jobs:
@@ -52,7 +52,7 @@ jobs:
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh &&lunch omni_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
+              . build/envsetup.sh &&lunch twrp_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - name: Upload recovery image
          run: |
