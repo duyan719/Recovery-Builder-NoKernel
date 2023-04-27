@@ -14,10 +14,10 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
-  DEVICE: vayu
-  DT_LINK:  https://github.com/Leminh8686/device_xiaomi_vayu-TWRP
-  DT_PATH: device/xiaomi/vayu
+  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0
+  DEVICE: spes
+  DT_LINK:  https://github.com/duyan719/android_device_xiaomi_spes-TWRP
+  DT_PATH: device/xiaomi/spes
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
